@@ -1,0 +1,30 @@
+body {
+  font-family: 'Noto Serif', serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #f8f8f8;
+  padding: 1em;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.content {
+  padding: 2em;
+  max-width: 800px;
+}
