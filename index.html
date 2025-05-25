@@ -2,27 +2,130 @@
 <html lang="sa">
 <head>
   <meta charset="UTF-8">
-  <title>Repository of Indian mathematics and astronomy texts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>भारतीयगणितज्यौतिषग्रन्थसङ्ग्रहः</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Serif', serif;
+      background: whitesmoke;
+      color: #f4e8d8;
+    }
+
+    header {
+      background: black;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 4px solid #d4af37;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #ffd700;
+    }
+
+    header h2 {
+      font-size: 1.2rem;
+      color: #e0c285;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    } 
+
+    .card {
+      background: #0e2148;
+      border: 2px solid #a97c50;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #fcd462;
+      margin-bottom: 1rem;
+    }
+
+    .card ul {
+      list-style-type: '📜';
+      padding-left: 1.2rem;
+    }
+
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header h2 { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>भारतीयगणितज्यौतिषग्रन्थसङ्ग्रहः</h1>
+    <h2>A repository of Indian mathematical and astronomical texts</h2>
+  </header>
 
-  <div class="sidebar">
-    <h2>Contents</h2>
-    <ul>
-      <li><a href="aryabhatiya.html">Āryabhatīya</a></li>
-      <li><a href="#Brāhmasphuṭasiddhānta">Brāhmasphuṭasiddhānta</a></li>
-      <li><a href="#Siddhāntaśiromaṇi">Siddhāntaśiromaṇi</a></li>
-    <li> <a href="lilavati.html">Līlāvatī</a></li>
-    <li> <a href="bijaganita.html">Bījagaṇita</a></li>
-    <li> <a href="jyotirmimamsa.html">Jyotirmīmāṁsā</a></li>
-      <!-- Add more sections as needed -->
-    </ul>
-  </div>
-  
+  <section class="container">
+    <div class="card">
+      <h3><center>आर्यभटः</center></h3>
+      <ul>
+        <li><a href = aryabhatiya.html>आर्यभटीयम्</a></li>
+        <li>आर्यभटसिद्धान्तः</li>
+      </ul>
+    </div>
 
-    <!-- Add more chapters/sections as needed -->
-  </div>
+    <div class="card">
+      <h3><center>ब्रह्मगुप्तः</center></h3>
+      <ul>
+        <li>ब्रह्मस्फुटसिद्धान्तः</li>
+        <li>खण्डखाद्यकम्</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><center>भास्कराचार्यः</center></h3>
+      <ul>
+        <li>लीलावती</li>
+        <li><a href=bijaganita.html>बीजगणितम्</a></li>
+        <li>सिद्धान्तशिरोमणिः</li>
+        <li>गोलाध्यायः</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><center>वराहमिहिरः</center></h3>
+      <ul>
+        <li>बृहत्संहिता</li>
+        <li>पंचसिद्धान्तिका</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><center>माधवः</center></h3>
+      <ul>
+        <li>साङ्ख्यकरण</li>
+        <li>वेणुव्याकरण</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3><center>नीलकण्ठः</center></h3>
+      <ul>
+        <li>तन्त्रसङ्ग्रहः</li>
+        <li>आर्यभटीयभाष्यम्</li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>
