@@ -10,7 +10,7 @@
 <body class="bijaganita-dark"></body>
 <div class="container">
   <div class="sidebar">
-    <h2>Contents</h2>
+    <h2>Contents</h2> 
     <ol>
       <li><a href="#Āryabhaṭīyabhāṣya">Nīlakaṇṭha's Āryabhaṭīyabhāṣya</a></li>
       <li><a href="#Gaṇitapāda">Section 2: Gaṇitapāda</a></li>
@@ -265,6 +265,7 @@
 </div>
 
 
+
 <button id="toggleToolsBtn" class="toggle-btn">Tools</button>
   <div class="tools-sidebar">
   <h2 style="text-align: center;">Tools</h2>
@@ -273,6 +274,7 @@
     <li><a href="https://sanskrit.uohyd.ac.in/scl/#" target="_blank">Saṁsādhanii</a></li>
     <li><a href="https://www.sanskritdictionary.com/" target="_blank">Monier-Williams Dictionary</a></li>
     <li><a href="https://www.learnsanskrit.cc/" target="_blank">Spoken Sanskrit</a></li>
+    <li><a href="https://archive.org/details/aryabhatiyabhashya-of-nilakantha-i-ganitapada-1930b" target="_blank">Refer PDF</a></li>
     <!-- Add more as needed -->
   </ul>
 </div>
@@ -284,6 +286,22 @@
   toggleBtn.addEventListener('click', () => {
     toolsSidebar.classList.toggle('hidden');
     toggleBtn.textContent = toolsSidebar.classList.contains('hidden') ? 'Tools' : 'Tools';
+  });
+</script>
+
+<button id="darkModeToggle" class="toggle-btn" style="top: 60px; right: 10px;">Dark</button>
+<script>
+  const darkToggle = document.getElementById('darkModeToggle');
+  const root = document.body;
+
+  // Load preference on page load
+  if (localStorage.getItem('darkMode') === 'true') {
+    root.classList.add('dark-mode');
+  }
+
+  darkToggle.addEventListener('click', () => {
+    root.classList.toggle('dark-mode');
+    localStorage.setItem('darkMode', root.classList.contains('dark-mode'));
   });
 </script>
 </body>
